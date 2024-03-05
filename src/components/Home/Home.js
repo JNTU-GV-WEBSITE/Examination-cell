@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "./Home.css";
 import SendIcon from '@mui/icons-material/Send';
+import Chat from "../Chat";
+
 
 function Home() {
   return (
@@ -43,7 +45,7 @@ function Home() {
           </div>
         </div>
       </div>
-
+<Chat/>
       <br /><br />
       <div className="iqacMessageContainer">
         <div className="iqacMessage">

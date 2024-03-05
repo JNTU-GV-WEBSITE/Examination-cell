@@ -147,14 +147,7 @@ const Dropdown = () => {
             </div>
         </div>*/}
 
-<div className="dropdown">
-          <div className="dropbtn">
-            <DraftsIcon />
-            <Link to="/programmes-offered" className="link-btn">
-              PROGRAMMES OFFERED
-            </Link>
-          </div>
-        </div>
+
 
 
         {/* <div class="dropdown">
@@ -191,7 +184,14 @@ const Dropdown = () => {
             </button>
           </div>
           </div> 
-
+          <div className="dropdown">
+          <div className="dropbtn">
+            <DraftsIcon />
+            <Link to="/programmes-offered" className="link-btn">
+              CHAT WITH US
+            </Link>
+          </div>
+        </div>
 {/* <div className="dropdown">
           <div className="dropbtn">
             <DraftsIcon />
