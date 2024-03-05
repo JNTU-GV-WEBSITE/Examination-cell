@@ -4,7 +4,7 @@
 .form {
     text-align: center;
     color: #f3f2f4;
-    background-color: #035a5a;
+    background-color: #12372A;
     padding: 10px; /* Increased padding for better visibility */
   }
   
@@ -16,7 +16,7 @@
   
   /* Change the background and text color of dropdown options on hover */
   .feedback-type select option:hover {
-    background-color: #035a5a; /* Change the background color on hover */
+    background-color: #12372A; /* Change the background color on hover */
     color: white; /* Change the text color on hover */
   }
 
@@ -27,7 +27,7 @@
   
   /* Change the background and text color of dropdown options on hover */
   .form-label select option:hover {
-    background-color: #035a5a; /* Change the background color on hover */
+    background-color: #12372A; /* Change the background color on hover */
     color: white; /* Change the text color on hover */
   }
   
@@ -82,7 +82,7 @@
   }
 
   button {
-    background-color: #035a5a;
+    background-color: #12372A;
     color: white;
     padding: 10px 15px;
     border: none;

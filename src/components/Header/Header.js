@@ -13,7 +13,7 @@ const Header = () => {
             <br />
             VIZIANAGARAM-535 003, A.P
             <h6>(Established by Andhra Pradesh Act No.22 of 2021)</h6><br/>
-            <h3 className="heading">INTERNAL QUALITY ASSURANCE CELL [IQAC]</h3>
+            <h3 className="heading">Examination Cell</h3>
           </h1>
         </div>
       </div>
