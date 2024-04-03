@@ -108,7 +108,7 @@ const Dropdown = () => {
 
         <div class="dropdown">
           <div class="dropbtn">
-            <GridViewRoundedIcon />&nbsp;  COURSE DETAILS
+            <GridViewRoundedIcon />&nbsp;  SYLLABUS
           </div>
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button >
@@ -184,6 +184,14 @@ const Dropdown = () => {
             </button>
           </div>
           </div> 
+          <div className="dropdown">
+          <div className="dropbtn">
+          <DescriptionIcon />
+            <Link to="/results" className="link-btn">
+              RESULTS
+            </Link>
+          </div>
+        </div>
           <div className="dropdown">
           <div className="dropbtn">
             <DraftsIcon />
