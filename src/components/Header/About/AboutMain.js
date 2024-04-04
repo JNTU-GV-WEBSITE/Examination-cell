@@ -29,15 +29,15 @@ const AboutMain = () => {
             location.pathname === "/about-us/about-director" ? "active" : ""
           }`}
         >
-          DIRECTOR
+          Director of Evaluation
         </Link>
         <Link
-          to="about-coordinator"
+          to="about-controllerofexamination"
           className={`menuButton ${
-            location.pathname === "/about-us/about-coordinator" ? "active" : ""
+            location.pathname === "/about-us/about-controllerofexamination" ? "active" : ""
           }`}
         >
-          CO-ORDINATOR
+          Controller of Examination
         </Link>
         
       </div>
