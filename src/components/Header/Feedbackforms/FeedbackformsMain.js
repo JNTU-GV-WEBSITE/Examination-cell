@@ -27,14 +27,14 @@ const FeedbackformsMain = () => {
           STUDENT
         </Link>
 
-        <Link
+        {/* <Link
           to="/feedbackforms/alumni-form"
           className={`menuButton ${
             location.pathname === '/feedbackforms/alumni-form' ? 'active' : ''
           }`}
         >
           ALUMNI
-        </Link>
+        </Link> */}
       </div>
       <Outlet />
     </div>

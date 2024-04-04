@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import AboutMain from './components/Header/About/AboutMain';
-import IQAC from './components/Header/About/IQAC/IQAC';
+import Exam from './components/Header/About/Exam/Exam';
 import JNTUGV from './components/Header/About/JNTUGV/JNTUGV';
 import Director from './components/Header/About/DIRECTOR/Director';
 import Coursedetails from './components/Header/Coursedetails/Coursedetails';
@@ -14,14 +14,12 @@ import UGsyllabus from './components/Header/Coursedetails/UGsyllabus/UGsyllabus'
 import PGsyllabus from './components/Header/Coursedetails/PGsyllabus/PGsyllabus';
 
 import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
-import Reports from './components/Header/Reports/Reports';
 import QAT from './components/Header/QAT/QAT';
 import AQAR from './components/Header/AQAR/AQAR';
 import PdfViewer from './components/Header/AQAR/PdfViewer';
 import FeedbackformsMain from './components/Header/Feedbackforms/FeedbackformsMain';
 import Faculty from './components/Header/Feedbackforms/Faculty/Faculty';
 import Student from './components/Header/Feedbackforms/Student/Student';
-import Alumni from './components/Header/Feedbackforms/Alumni/Alumni';
 import CS from './components/Home/Data/CS';
 import VisionMission from './components/Home/Data/Visionmission';
 import IIQA from './components/Home/Data/IIQA';
@@ -60,12 +58,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutMain />}>
-          <Route path="about-iqac" element={<IQAC />} />
+          <Route path="about-exam" element={<Exam />} />
           <Route path="about-jntugv" element={<JNTUGV />} />
           <Route path="about-director" element={<Director />} />
           <Route path="about-coordinator" element={<Coordinator />} />
         </Route>
-        <Route path="/reports" element={<Reports />} />
+   
 
         
   <Route path="/about-course-details" element={<Coursedetails />}>
@@ -87,7 +85,6 @@ function App() {
       <Route path="/feedbackforms" element={<FeedbackformsMain />}>
           <Route path="faculty-form" element={<Faculty />} />
           <Route path="student-form" element={<Student />} />
-          <Route path="alumni-form" element={<Alumni />} />
         </Route>
         
         <Route path="/about-vision-mission" element={<VisionMission />} />

@@ -7,7 +7,6 @@ import HomeIcon from "@mui/icons-material/Home";
 import DraftsIcon from "@mui/icons-material/Drafts";
 import GridViewRoundedIcon from "@mui/icons-material/GridViewRounded";
 import ApartmentIcon from "@mui/icons-material/Apartment";
-import DescriptionIcon from "@mui/icons-material/Description";
 import MenuIcon from "@mui/icons-material/Menu";
 import CampaignIcon from '@mui/icons-material/Campaign';
 
@@ -54,8 +53,8 @@ const Dropdown = () => {
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button >
               {" "}
-              <Link className="link-btn" to="/about-us/about-iqac">
-                About IQAC
+              <Link className="link-btn" to="/about-us/about-exam">
+                About Examination Cell
               </Link>
             </button>
             <button>
@@ -97,14 +96,14 @@ const Dropdown = () => {
           </div>
         </div>
 
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <div className="dropbtn">
             <DescriptionIcon />
             <Link to="/AQAR" className="link-btn">
               REPORTS
             </Link>
           </div>
-        </div>
+        </div> */}
 
         <div class="dropdown">
           <div class="dropbtn">
@@ -176,12 +175,12 @@ const Dropdown = () => {
                 Student
               </Link>
             </button>
-            <button>
+            {/* <button>
               {" "}
               <Link className="link-btn" to="/feedbackforms/alumni-form">
                 Alumni
               </Link>
-            </button>
+            </button> */}
           </div>
           </div> 
           <div className="dropdown">
