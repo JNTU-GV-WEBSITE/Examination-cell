@@ -5,7 +5,6 @@ import HomeIcon from "@mui/icons-material/Home";
 import DraftsIcon from "@mui/icons-material/Drafts";
 import GridViewRoundedIcon from "@mui/icons-material/GridViewRounded";
 import ApartmentIcon from "@mui/icons-material/Apartment";
-import DescriptionIcon from "@mui/icons-material/Description";
 import MenuIcon from "@mui/icons-material/Menu";
 import CampaignIcon from "@mui/icons-material/Campaign";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -48,8 +47,8 @@ const Dropdown = () => {
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button >
               {" "}
-              <Link className="link-btn" to="/about-us/about-iqac">
-                About IQAC
+              <Link className="link-btn" to="/about-us/about-exam">
+                About Examination Cell
               </Link>
             </button>
             <button>
@@ -91,14 +90,14 @@ const Dropdown = () => {
           </div>
         </div>
 
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <div className="dropbtn">
             <DescriptionIcon />
             <Link to="/AQAR" className="link-btn">
               REPORTS
             </Link>
           </div>
-        </div>
+        </div> */}
 
         <div class="dropdown">
           <div class="dropbtn">
@@ -127,7 +126,38 @@ const Dropdown = () => {
               CONTACT
             </Link>
           </div>
+<<<<<<< HEAD
+        </div> */}
+
+
+         <div class="dropdown">
+          <div class="dropbtn">
+            <DraftsIcon />&nbsp; FEEDBACK FORMS
+          </div>
+          <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
+            <button >
+              {" "}
+              <Link className="link-btn" to="/feedbackforms/faculty-form">
+                Faculty
+              </Link>
+            </button>
+            <button>
+              {" "}
+              <Link className="link-btn" to="/feedbackforms/student-form">
+                Student
+              </Link>
+            </button>
+            {/* <button>
+              {" "}
+              <Link className="link-btn" to="/feedbackforms/alumni-form">
+                Alumni
+              </Link>
+            </button> */}
+          </div>
+          </div> 
+=======
         </div>
+>>>>>>> 81fdc8bb19f9daa242aa48c2ddfd827906224521
           <div className="dropdown">
           <div className="dropbtn">
             <DraftsIcon />

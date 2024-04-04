@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getNotifications } from './NotificationsData'; // Adjust the import path
 import './Notifications.css';
+import { Paper } from "@mui/material";
+
 
 const Notifications = () => {
   const [notifications, setNotifications] = useState([]);
@@ -20,6 +22,7 @@ const Notifications = () => {
   return (
     <div className="notificationsComponent">
       <div className="notificationsContainer">
+      <Paper elevation={100} className="member">
         {notifications.map((notification) => (
           <div
             key={notification.date + notification.month + notification.year}
@@ -53,6 +56,7 @@ const Notifications = () => {
             <div className="updateDivSeparator"></div>
           </div>
         ))}
+        </Paper>
       </div>
     </div>
   );

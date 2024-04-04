@@ -8,12 +8,12 @@ const AboutMain = () => {
       <div className="ABOUTallLeftMenu">
          
          <Link
-          to="about-iqac"
+          to="about-exam"
           className={`menuButton ${
-            location.pathname === "/about-us/about-iqac" ? "active" : ""
+            location.pathname === "/about-us/about-exam" ? "active" : ""
           }`}
         >
-          IQAC
+          Examination
         </Link>
         <Link
           to="about-jntugv"
