@@ -8,18 +8,29 @@ import Footer from './components/Footer/Footer';
 import AboutMain from './components/Header/About/AboutMain';
 import Exam from './components/Header/About/Exam/Exam';
 import JNTUGV from './components/Header/About/JNTUGV/JNTUGV';
-import Director from './components/Header/About/DIRECTOR/Director';
+import DirectorofEvaluation from './components/Header/About/DirectorofEvaluation/DirectorofEvaluation';
 import Coursedetails from './components/Header/Coursedetails/Coursedetails';
 import UGsyllabus from './components/Header/Coursedetails/UGsyllabus/UGsyllabus';
 import PGsyllabus from './components/Header/Coursedetails/PGsyllabus/PGsyllabus';
 
 import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
+<<<<<<< HEAD
 import QAT from './components/Header/QAT/QAT';
 import AQAR from './components/Header/AQAR/AQAR';
 import PdfViewer from './components/Header/AQAR/PdfViewer';
 import FeedbackformsMain from './components/Header/Feedbackforms/FeedbackformsMain';
 import Faculty from './components/Header/Feedbackforms/Faculty/Faculty';
 import Student from './components/Header/Feedbackforms/Student/Student';
+=======
+import Reports from './components/Header/Reports/Reports';
+import ExaminationTeam from './components/Header/ExaminationTeam/ExaminationTeam';
+import AQAR from './components/Header/AQAR/AQAR';
+import PdfViewer from './components/Header/AQAR/PdfViewer';
+// import FeedbackformsMain from './components/Header/Feedbackforms/FeedbackformsMain';
+// import Faculty from './components/Header/Feedbackforms/Faculty/Faculty';
+// import Student from './components/Header/Feedbackforms/Student/Student';
+// import Alumni from './components/Header/Feedbackforms/Alumni/Alumni';
+>>>>>>> 81fdc8bb19f9daa242aa48c2ddfd827906224521
 import CS from './components/Home/Data/CS';
 import VisionMission from './components/Home/Data/Visionmission';
 import IIQA from './components/Home/Data/IIQA';
@@ -31,7 +42,7 @@ import PCOI from './components/Home/Data/PCOI';
 // import NewsandEvents from './components/Home/NewsandEvents/NewsandEvents';
 // import Scrollbar from './components/Home/NewsandEvents/Scrollbar';
 // import UpdatePanel from './components/Home/UpdatePanel/UpdatePanel';
-import Coordinator from './components/Header/About/Coordinator/Coordinato';
+//import ControllerofExaminations from './components/Header/About/ControllerofExaminations/ControllerofExamination';
 
 import Strategies from './components/Home/Data/Strategies';
 import Functions from './components/Home/Data/Functions';
@@ -44,6 +55,8 @@ import Outcomes from './components/Home/Data/Outcomes';
 import AICTE from './components/Home/AICTE/AICTE';
 import MOU from './components/Home/Data/MOU';
 import Events from './components/Home/Data/Events';
+import ControllerofExamination from './components/Header/About/ControllerofExamination/ControllerofExamination';
+import Contact from './components/Header/Contact/Contact';
 //import Forms from './components/Header/Forms/Forms';
 
 function App() {
@@ -60,8 +73,8 @@ function App() {
         <Route path="/about-us" element={<AboutMain />}>
           <Route path="about-exam" element={<Exam />} />
           <Route path="about-jntugv" element={<JNTUGV />} />
-          <Route path="about-director" element={<Director />} />
-          <Route path="about-coordinator" element={<Coordinator />} />
+          <Route path="about-director" element={<DirectorofEvaluation />} />
+          <Route path="about-controllerofexamination" element={<ControllerofExamination />} />
         </Route>
    
 
@@ -77,15 +90,20 @@ function App() {
 
         
         <Route path="/programmes-offered" element={<ProgrammesOffered />} />
-         <Route path="/qat" element={<QAT />} /> 
+         <Route path="/examinationteam" element={<ExaminationTeam />} /> 
         <Route path="/AQAR" element={<AQAR />} />
         <Route path="/pdf-viewer/:path" element={<PdfViewer />} />
         {/* <Route path="/forms" element={<Forms />} /> */}
       
-      <Route path="/feedbackforms" element={<FeedbackformsMain />}>
+      {/* <Route path="/feedbackforms" element={<FeedbackformsMain />}>
           <Route path="faculty-form" element={<Faculty />} />
           <Route path="student-form" element={<Student />} />
+<<<<<<< HEAD
         </Route>
+=======
+          <Route path="alumni-form" element={<Alumni />} />
+        </Route> */}
+>>>>>>> 81fdc8bb19f9daa242aa48c2ddfd827906224521
         
         <Route path="/about-vision-mission" element={<VisionMission />} />
         <Route path="/about-consulty-services" element={<CS />} />
@@ -97,7 +115,7 @@ function App() {
         <Route path="/about-functions" element={<Functions />} />
         <Route path="/about-benefits" element={<Benefits />} />
         <Route path="/about-course-details/about-ug-syllabus" element={<UGsyllabus />} />
-        <Route path="/feedbackforms/faculty-form" element={<Faculty />} />
+        {/* <Route path="/feedbackforms/faculty-form" element={<Faculty />} /> */}
         <Route path="/about-operational" element={<Operational />} />
         <Route path="/about-monitoring" element={<Monitoring />} />
         <Route path="/about-aicte-approvals" element={<AICTE />} />
@@ -108,7 +126,7 @@ function App() {
         {/* <Route path="/news-and-events" element={<NewsandEvents />} /> 
         <Route path="/scrolling-bar" element={<Scrollbar />} />
         <Route path="/update-panel" element={<UpdatePanel />} /> */}
-
+        <Route path="/contact" element={<Contact />} />
         <Route path="/notifications" element={<Notifications />} /> 
 
         </Routes>

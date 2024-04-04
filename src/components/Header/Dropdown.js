@@ -2,15 +2,12 @@ import "./Dropdown.css";
 import { Link, useNavigate } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
  import GroupsIcon from "@mui/icons-material/Groups";
-//import SchoolIcon from "@mui/icons-material/School";
-// import PersonIcon from "@mui/icons-material/Person";
 import DraftsIcon from "@mui/icons-material/Drafts";
 import GridViewRoundedIcon from "@mui/icons-material/GridViewRounded";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import MenuIcon from "@mui/icons-material/Menu";
-import CampaignIcon from '@mui/icons-material/Campaign';
-
-
+import CampaignIcon from "@mui/icons-material/Campaign";
+import PhoneIcon from "@mui/icons-material/Phone";
 import { useState } from "react";
 // import { PiExamFill } from "react-icons/pi";
 
@@ -22,10 +19,7 @@ const Dropdown = () => {
   const homeHandler = () => {
     navigate("/");
   };
-  // eslint-disable-next-line no-lone-blocks
-  {/*const contactHandler = () => {
-    navigate("/contact-us");
-  };*/}
+
   return (
     <nav className="topnav">
       <div className="menu-icon" onClick={() => setMenuState(!menuState)}>
@@ -66,13 +60,13 @@ const Dropdown = () => {
             <button>
               {" "}
               <Link className="link-btn" to="/about-us/about-director">
-                About Director
+                Director of Evaluation
               </Link>
             </button>
             <button>
               {" "}
-              <Link className="link-btn" to="/about-us/about-coordinator">
-                About Co-Ordinator
+              <Link className="link-btn" to="/about-us/about-controllerofexamination">
+                Controller of Examination
               </Link>
             </button>
           </div>
@@ -81,8 +75,8 @@ const Dropdown = () => {
         <div className="dropdown">
           <div className="dropbtn">
             <GroupsIcon />
-            <Link to="/qat" className="link-btn">
-              QUALITY ASSURANCE TEAM
+            <Link to="/examinationteam" className="link-btn">
+             EXAMINATION TEAM
             </Link>
           </div>
         </div>
@@ -124,37 +118,15 @@ const Dropdown = () => {
             </button>
 
           </div>
-        </div>
-
-        {/*<div class="dropdown">
-          <div class="dropbtn">
-            <DescriptionIcon /> NAAC DATA FILES
-          </div>
-          <div
-            class="dropdown-content"
-            onClick={() => setMenuState(!menuState)}>
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="https://results.jntugv.edu.in"
-                target="_blank"
-              >
-                Examination Results
-              </Link>
-            </button>
-            </div>
-        </div>*/}
-
-
-
-
-        {/* <div class="dropdown">
+        </div> 
+        <div className="dropdown">
           <div className="dropbtn">
-            <Link to="/reports" className="drop-icon" onClick={() => setMenuState(!menuState)}>
-              <DescriptionIcon /> REPORTS
+            <PhoneIcon />
+            <Link to="/contact" className="link-btn">
+              CONTACT
             </Link>
           </div>
+<<<<<<< HEAD
         </div> */}
 
 
@@ -183,6 +155,9 @@ const Dropdown = () => {
             </button> */}
           </div>
           </div> 
+=======
+        </div>
+>>>>>>> 81fdc8bb19f9daa242aa48c2ddfd827906224521
           <div className="dropdown">
           <div className="dropbtn">
             <DraftsIcon />
