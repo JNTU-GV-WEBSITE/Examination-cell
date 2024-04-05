@@ -12,6 +12,7 @@ import DirectorofEvaluation from './components/Header/About/DirectorofEvaluation
 import Coursedetails from './components/Header/Coursedetails/Coursedetails';
 import UGsyllabus from './components/Header/Coursedetails/UGsyllabus/UGsyllabus';
 import PGsyllabus from './components/Header/Coursedetails/PGsyllabus/PGsyllabus';
+import Results from './components/Header/Results/Results';
 
 import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
 import Reports from './components/Header/Reports/Reports';
@@ -115,6 +116,7 @@ function App() {
         <Route path="/update-panel" element={<UpdatePanel />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/notifications" element={<Notifications />} /> 
+        <Route path="/results" element={<Results />} /> 
 
         </Routes>
 
