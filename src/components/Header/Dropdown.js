@@ -38,8 +38,6 @@ const Dropdown = () => {
   </div>
 </div>
 
-
-
         <div class="dropdown">
           <div class="dropbtn">
             <ApartmentIcon /> &nbsp;
@@ -48,8 +46,8 @@ const Dropdown = () => {
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button >
               {" "}
-              <Link className="link-btn" to="/about-us/about-iqac">
-                About IQAC
+              <Link className="link-btn" to="/about-us/about-examination">
+                About Examination
               </Link>
             </button>
             <button>
@@ -67,7 +65,37 @@ const Dropdown = () => {
             <button>
               {" "}
               <Link className="link-btn" to="/about-us/about-controllerofexamination">
-                Controller of Examination
+                Controller of Examinations
+              </Link>
+            </button>
+            <button>
+              {" "}
+              <Link className="link-btn" to="/about-us/about-additionalcontrollerSDC">
+                Additional Controller of Examinations SDC
+              </Link>
+            </button>
+            <button>
+              {" "}
+              <Link className="link-btn" to="/about-us/about-additionalcontroller1">
+                Additional Controller of Examinations 1
+              </Link>
+            </button>
+            <button>
+              {" "}
+              <Link className="link-btn" to="/about-us/about-additionalcontroller2">
+                Additional Controller of Examinations 2
+              </Link>
+            </button>
+            <button>
+              {" "}
+              <Link className="link-btn" to="/about-us/about-additionalcontroller3">
+                Additional Controller of Examinations 3
+              </Link>
+            </button>
+            <button>
+              {" "}
+              <Link className="link-btn" to="/about-us/about-additionalcontrollerPG">
+                Additional Controller of Examinations PG
               </Link>
             </button>
           </div>
@@ -87,15 +115,6 @@ const Dropdown = () => {
             <CampaignIcon />
             <Link to="/notifications" className="link-btn">
               NOTIFICATIONS
-            </Link>
-          </div>
-        </div>
-
-        <div className="dropdown">
-          <div className="dropbtn">
-            <DescriptionIcon />
-            <Link to="/AQAR" className="link-btn">
-              REPORTS
             </Link>
           </div>
         </div>

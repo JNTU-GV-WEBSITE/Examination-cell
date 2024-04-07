@@ -8,12 +8,12 @@ const AboutMain = () => {
       <div className="ABOUTallLeftMenu">
          
          <Link
-          to="about-iqac"
+          to="about-examination"
           className={`menuButton ${
-            location.pathname === "/about-us/about-iqac" ? "active" : ""
+            location.pathname === "/about-us/about-examination" ? "active" : ""
           }`}
         >
-          IQAC
+          About Examination
         </Link>
         <Link
           to="about-jntugv"
@@ -37,9 +37,48 @@ const AboutMain = () => {
             location.pathname === "/about-us/about-controllerofexamination" ? "active" : ""
           }`}
         >
-          Controller of Examination
+          Controller of Examinations
         </Link>
-        
+        <Link
+          to="about-additionalcontrollerSDC"
+          className={`menuButton ${
+            location.pathname === "/about-additionalcontrollerSDC" ? "active" : ""
+          }`}
+        >
+          Additional Controller of Examinations SDC
+        </Link>
+        <Link
+          to="about-additionalcontroller1"
+          className={`menuButton ${
+            location.pathname === "/about-additionalcontroller1" ? "active" : ""
+          }`}
+        >
+          Additional Controller of Examinations 1
+        </Link>
+        <Link
+          to="about-additionalcontroller2"
+          className={`menuButton ${
+            location.pathname === "/about-additionalcontroller2" ? "active" : ""
+          }`}
+        >
+          Additional Controller of Examinations 2
+        </Link>
+        <Link
+          to="about-additionalcontroller3"
+          className={`menuButton ${
+            location.pathname === "/about-additionalcontroller3" ? "active" : ""
+          }`}
+        >
+          Additional Controller of Examinations 3
+        </Link>
+        <Link
+          to="about-additionalcontrollerPG"
+          className={`menuButton ${
+            location.pathname === "/about-additionalcontrollerPG" ? "active" : ""
+          }`}
+        >
+          Additional Controller of Examinations PG
+        </Link>
       </div>
       <Outlet />
     </div>

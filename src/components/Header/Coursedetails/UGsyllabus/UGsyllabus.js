@@ -5,14 +5,10 @@ import UGSyllabusData from './UGsyllabusData';
 
 const UGsyllabus = () => {
     const { path } = useParams(); // Get the 'path' parameter from the URL
-    const [activeTab, setActiveTab] = useState("R23"); // State to track active tab
+    const [activeTab] = useState("R23"); // State to track active tab
   
     const handleViewDownload = (pdfPath) => {
       window.location.href = pdfPath;
-    };
-  
-    const handleTabClick = (tabId) => {
-      setActiveTab(tabId);
     };
   
     const renderSyllabusTableRows = () => {
@@ -67,34 +63,6 @@ const UGsyllabus = () => {
     return (
       <div>
          <h2 className="ug">Syllabi of B.Tech. Full-Time Programmes</h2>
-        <ul className="tab-navigation" role="tablist">
-        <li role="tab" className={`tab-item ${activeTab === "R23" ? "active" : ""}`}>
-          <button className={`tab-button ${activeTab === "R23" ? "active" : ""}`} onClick={() => handleTabClick("R23")}>
-           R23
-          </button>
-        </li>
-        <li role="tab" className={`tab-item ${activeTab === "R20" ? "active" : ""}`}>
-         <button className={`tab-button ${activeTab === "R20" ? "active" : ""}`} onClick={() => handleTabClick("R20")}>
-          R20
-         </button>
-        </li>
-        <li role="tab" className={`tab-item ${activeTab === "R19" ? "active" : ""}`}>
-          <button className={`tab-button ${activeTab === "R19" ? "active" : ""}`} onClick={() => handleTabClick("R19")}>
-           R19
-          </button>
-         </li>
-        <li role="tab" className={`tab-item ${activeTab === "R16" ? "active" : ""}`}>
-          <button className={`tab-button ${activeTab === "R16" ? "active" : ""}`} onClick={() => handleTabClick("R16")}>
-           R16
-          </button>
-        </li> 
-        <li role="tab" className={`tab-item ${activeTab === "R13" ? "active" : ""}`}>
-          <button className={`tab-button ${activeTab === "R13" ? "active" : ""}`} onClick={() => handleTabClick("R13")}>
-           R13
-          </button>
-        </li>
-        </ul>
-  
        
         {path ? (
           <PdfViewer />
