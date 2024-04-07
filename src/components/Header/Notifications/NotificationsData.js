@@ -1,223 +1,113 @@
-// Sample data for notifications
-export const getNotifications = () => [
-  {
-    description: "Timetable for I B. TECH II SEMESTER (R20 REGULATION) SUPPLEMENTARY EXAMINATIONS, April 2024",
-    link: " https://api.jntugv.edu.in/media/Timetable%20for%20I%20B.%20TECH%20II%20SEMESTER%20(R20%20REGULATION)%20SUPPLEMENTARY%20EXAMINATIONS,%20April%20-%202024%20(1).pdf  ",
-    date: " 16  ",
-    month: " Mar ",
-    year: " 2024  ",
-    type: "notifications",
-    isLink: true,
-  },
-    
-      
-  {
-    description: "Timetable for I B. TECH II MESTER (R16 REGULATION) SUPPLEMENTARY EXAMINATIONS, April - 2024",
-    link: " https://api.jntugv.edu.in/media/Timetable%20for%20I%20B.%20TECH%20II%20SEMESTER%20(R16%20REGULATION)%20SUPPLEMENTARY%20EXAMINATIONS,%20April%20-%202024.pdf  ",
-    date: "  16 ",
-    month: " Mar ",
-    year: "  2024 ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "PHARM D V Semester Regular & Supple Exams April 2024",
-    link: "  https://api.jntugv.edu.in/media/Notification%20-Pharm%20D%20V%20Year%20Reg&%20Supple%20Exams%20April%202024.pdf ",
-    date: " 11  ",
-    month: " Mar ",
-    year: "  2024 ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "PHARM D IV Semester Regular & Supple Exams April 2024",
-    link: "  https://api.jntugv.edu.in/media/Notification%20-Pharm%20D%20IV%20Year%20Reg&%20Supple%20Exams%20April%202024.pdf ",
-    date: " 11  ",
-    month: " Mar ",
-    year: "  2024 ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "PHARM D III Semester Regular & Supple Exams April 2024",
-    link: "  https://api.jntugv.edu.in/media/Notification%20-Pharm%20D%20III%20Year%20Reg&%20Supple%20Exams%20April%202024.pdf ",
-    date: " 11  ",
-    month: "Mar  ",
-    year: " 2024  ",
-    type: "notifications",
-    isLink: true,
-  },
+// // // Sample data for notifications
+
+
+
+// export const getNotifications = () => [
+//     {
+//       "description": "test notification",
+//       "link": "http://localhost:3000/add_notification",
+//       "date": 13,
+//       "month": "May",
+//       "year": 2024,
+//       "type": "notifications",
+//       "isLink": true
+//   },
+//   {
+//       "description": "my notification",
+//       "link": "google.com",
+//       "date": 2024,
+//       "month": "Apr",
+//       "year": 7,
+//       "type": "notifications",
+//       "isLink": false
+//   },
+//   {
+//       "description": "my notification1",
+//       "link": "google.com",
+//       "date": 2024,
+//       "month": "Apr",
+//       "year": 7,
+//       "type": "notifications",
+//       "isLink": false
+//   },
+//   {
+//       "description": "my notification3",
+//       "link": "google.com",
+//       "date": 2024,
+//       "month": "Apr",
+//       "year": 7,
+//       "type": "notifications",
+//       "isLink": false
+//   },
+//   {
+//       "description": "my notification 8",
+//       "link": "abc.com",
+//       "date": 2024,
+//       "month": "Apr",
+//       "year": 7,
+//       "type": "notifications",
+//       "isLink": false
+//   },
+//   {
+//       "description": "my notification 9",
+//       "link": "abc.com",
+//       "date": 2024,
+//       "month": "Apr",
+//       "year": 7,
+//       "type": "notifications",
+//       "isLink": false
+//   },
+//   {
+//       "description": "my notification 10",
+//       "link": "abc.com",
+//       "date": 2024,
+//       "month": "Apr",
+//       "year": 7,
+//       "type": "notifications",
+//       "isLink": false
+//   },
+//   {
+//       "description": "aaaaa",
+//       "link": "aa.com",
+//       "date": 2024,
+//       "month": "Apr",
+//       "year": 7,
+//       "type": "notifications",
+//       "isLink": false
+//   },
+//   {
+//       "description": "jbdjewbjc",
+//       "link": "google.com",
+//       "date": 2024,
+//       "month": "Apr",
+//       "year": 5,
+//       "type": "notifications",
+//       "isLink": false
+//   }
+// ]
   
-  
-  {
-    description: "MCA IV Semester Regular & Supple Exams April 2024",
-    link: "  https://api.jntugv.edu.in/media/Notification%20-MCA%20IV%20Semester%20Reg&%20Supple%20Exams%20April%202024.pdf ",
-    date: "  11 ",
-    month: "  Mar",
-    year: "  2024 ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "MBA IV Semester Reg& Supple Exams April 2024",
-    link: " https://api.jntugv.edu.in/media/Notification%20-MBA%20IV%20Semester%20Reg&%20Supple%20Exams%20April%202024.pdf  ",
-    date: "  11 ",
-    month: " Mar ",
-    year: "  2024 ",
-    type: "notifications",
-    isLink: true,
-  },
+import axios from 'axios';
 
-  {
-    description: "III B.TECH II Semester supplementary examination(R20) Time Table Feburary 2024",
-    link: "  https://drive.google.com/file/d/1AEAnC_4YFLUOXE7RibYY-VgY0d-V9PzV/view ",
-    date: "  06 ",
-    month: "  Feb",
-    year: " 2024  ",
-    type: "notifications",
-    isLink: true,
-  },
-
-  {
-    description: "III B.TECH II Semester supplementary examination(R19) Time Table Feburary 2024",
-    link: " https://drive.google.com/file/d/1rHeZs7EUd1n7WNIDXXrVCnF7ETgflNjY/view  ",
-    date: " 06  ",
-    month: "  Feb",
-    year: "  2024 ",
-    type: "notifications",
-    isLink: true,
-  },
-
-  {
-    description: "III B.TECH II Semester supplementary examination (R16) Time Table February 2024",
-    link: " https://drive.google.com/file/d/1aG6RIjWAIuQPQf1t1hTjkbQ9gAMd2zGy/view ",
-    date: " 06  ",
-    month: " Feb ",
-    year: " 2024  ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "II B.TECH II Semester supplementary examination(R19) Time Table Feburary 2024",
-    link: " https://drive.google.com/file/d/1a6z3appuWrVzvVgGwS4zsEKYSvpatXpC/view?usp=drive_link  ",
-    date: " 06  ",
-    month: "  Feb",
-    year: "  2024 ",
-    type: "notifications",
-    isLink: true,
-  },
-
-  {
-    description: "II B.TECH II Semester supplementary examination(R20) Time Table Feburary 2024",
-    link: " https://drive.google.com/file/d/1vk933oLzTp08cgFthLVX71P_l_6-GYDC/view  ",
-    date: " 06  ",
-    month: " Feb ",
-    year: "  2024 ",
-    type: "notifications",
-    isLink: true,
-  },
-
-  {
-    description: "II B.TECH II Semester supplementary examination Time Table Feburary 2024",
-    link: " https://drive.google.com/file/d/1zP3LT1wGWbYdfXqSvLEtn-8qBYJMD6h2/view  ",
-    date: " 06  ",
-    month: " Feb ",
-    year: "  2024 ",
-    type: "notifications",
-    isLink: true,
-  },
-
-  {
-    description: "I B. Tech I Semester Regular and Supplementary Notification",
-    link: "  https://drive.google.com/file/d/1klTCR02ufDCCQ3xMRTrEDz5Qik7qWcdP/view ",
-    date: " 15  ",
-    month: " Dec ",
-    year: "  2023 ",
-    type: "notifications",
-    isLink: true,
-  },
-
-  {
-    description: "Revaluation of I B. Tech I Semester Supplementary Examinations July -2023",
-    link: "  https://drive.google.com/file/d/19XoZcL50EhcyfsF-XW0zLGmTT-B9okty/view ",
-    date: "15   ",
-    month: " Dec ",
-    year: "  2023 ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "Application form for Revaluation",
-    link: "  https://drive.google.com/file/d/1ORgylAzE_1NJ9lkjOGlhEDghv2vSP6yu/view ",
-    date: "15   ",
-    month: " Dec ",
-    year: "  2023 ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "JNTUGV_3-1-R20 Supple TIME TABLE December 2023",
-    link: "  https://drive.google.com/file/d/16EPIsRX3jeRbI2e-MZMaV9O6pG_-aOF9/view ",
-    date: " 07  ",
-    month: "  Dec",
-    year: "  2023 ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "JNTUGV_3-1-R19 Supple TIME TABLE December 2023",
-    link: " https://drive.google.com/file/d/1Tp8iVEUmHyTjRvKleICh8M9TBC5Yjnox/view  ",
-    date: "  07 ",
-    month: " Dec ",
-    year: " 2023  ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "JNTUGV_3-1-R16-Supple- TIME TABLE December 2023",
-    link: "  https://drive.google.com/file/d/1_B3cciESIHVULCYeKBNz-NqxKBsPIQrO/view ",
-    date: " 07  ",
-    month: " Dec ",
-    year: "  2023 ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "IV B.Tech I Semester Jumbling centers",
-    link: "  https://drive.google.com/file/d/11xMjbXC8QFDedoJ8cKLP6YS2fh0P323I/view ",
-    date: "  30 ",
-    month: " Nov ",
-    year: "  2023 ",
-    type: "notifications",
-    isLink: true,
-  },
-  {
-    description: "IV-I B.Tech R16 Supple-Time Table-Dec-2023",
-    link: "  https://drive.google.com/file/d/1vIXgi5138lBTyPm1rIR-kX36Tbll8u9x/view ",
-    date: " 30  ",
-    month: " Nov ",
-    year: "  2023 ",
-    type: "notifications",
-    isLink: true,
-  },
-  
-  {
-    description: "IV-I B.Tech R19 Supple-Time Table-Dec-2023",
-    link: "  https://drive.google.com/file/d/1QWnLi30dkTFsGk2xRtm5Un_G1Fy7wI-d/view ",
-    date: "  30 ",
-    month: "Nov  ",
-    year: "  2023 ",
-    type: "notifications",
-    isLink: true,
-  },
-      {
-        description: "Revised IV-I B.Tech R20 Regular-Time Table-Dec-2023",
-        link: " https://drive.google.com/file/d/19fQCUNwdVYZ96kRgH7q12H3uz2nNoZXz/view  ",
-        date: " 30  ",
-        month: "Nov  ",
-        year: " 2023  ",
-        type: "notifications",
-        isLink: true,
-      },
-    ];
-  
+export const getNotifications = async () => {
+  try {
+    const response = await axios.get('http://localhost:4000/notifications');
+    const formattedData = response.data?.map(item => {
+      const dateParts = item.date.split('-');
+      const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      const monthIndex = parseInt(dateParts[1]) - 1;
+      return {
+          description: item.title,
+          link: item.url,
+          date: parseInt(dateParts[0]),
+          month: monthNames[monthIndex],
+          year: parseInt(dateParts[2]),
+          type: "notifications",
+          isLink: item.url.startsWith("http")
+      };
+  });
+    return formattedData; 
+  } catch (error) {
+    console.error(error);
+    return []; 
+  }
+}

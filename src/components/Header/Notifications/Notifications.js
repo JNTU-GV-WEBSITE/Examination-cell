@@ -1,13 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { getNotifications } from './NotificationsData'; // Adjust the import path
 import './Notifications.css';
+import { Link } from 'react-router-dom';
 
 const Notifications = () => {
   const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
-    // Fetch notifications using the provided function
-    setNotifications(getNotifications());
+    const fetchData = async () => {
+      try {
+        const fetchedNotifications = await getNotifications();
+        setNotifications(fetchedNotifications);
+      } catch (error) {
+        console.error('Error fetching notifications:', error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   const handleNotificationClick = (link) => {

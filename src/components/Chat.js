@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const Chat = () => {
@@ -7,16 +8,25 @@ const Chat = () => {
     const [search, setSearch] = useState('');
     const [conversations, setConversations] = useState([]);
     const [loading, setLoading] = useState(false);
-
+    const [answer, setAnswer] = useState('');
     async function aiRun() {
         if (!search.trim()) return;
         setLoading(true);
         const newConvo = { question: search, answer: '' };
         setConversations([...conversations, newConvo]);
         setSearch('');
-
+        
         const model = genAI.getGenerativeModel({ model: "gemini-pro" });
         const prompt = newConvo.question;
+        try{
+            const response = await axios.post("http://localhost:3000/chatbot",{
+            question: prompt,
+        });
+        console.log(response.data.message);
+        setAnswer(response.data.message);
+        }catch(error){
+            console.log(error);
+        };
         try {
             const result = await model.generateContent(prompt);
             const response = await result.response;
@@ -52,7 +62,7 @@ const Chat = () => {
                         <p style={{ margin: '0 0 5px 0', fontWeight: 'bold' }}>You:</p>
                         <p style={{ margin: '0 0 10px 0', background: '#f5f5f5', padding: '10px', borderRadius: '5px' }}>{convo.question}</p>
                         <p style={{ margin: '0 0 5px 0', fontWeight: 'bold' }}>AI:</p>
-                        <p style={{ margin: '0', background: '#e8e8e8', padding: '10px', borderRadius: '5px' }}>{convo.answer || (loading ? 'Loading...' : '')}</p>
+                        <p style={{ margin: '0', background: '#e8e8e8', padding: '10px', borderRadius: '5px' }}>{answer || (loading ? 'Loading...' : '')}</p>
                     </div>
                 )) : <p style={{ textAlign: 'center', color: '#999' }}>No conversations yet. Start by asking something!</p>}
             </div>

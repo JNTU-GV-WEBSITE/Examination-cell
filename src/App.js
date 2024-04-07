@@ -69,6 +69,7 @@ function App() {
           <Route path="about-additionalcontroller2" element={<AdditionalController2 />} />
           <Route path="about-additionalcontroller3" element={<AdditionalController3 />} />
           <Route path="about-additionalcontrollerPG" element={<AdditionalControllerPG />} />
+          <Route path="about-vision-mission" element={<VisionMission />} />
         </Route>      
   <Route path="/about-course-details" element={<Coursedetails />}>
     <Route path="about-ug-syllabus" element={<UGsyllabus />} />
