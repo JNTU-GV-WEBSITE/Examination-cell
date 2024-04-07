@@ -1,12 +1,10 @@
 import React from 'react';
 import './App.css';
-
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import AboutMain from './components/Header/About/AboutMain';
-import IQAC from './components/Header/About/IQAC/IQAC';
 import JNTUGV from './components/Header/About/JNTUGV/JNTUGV';
 import DirectorofEvaluation from './components/Header/About/DirectorofEvaluation/DirectorofEvaluation';
 import Coursedetails from './components/Header/Coursedetails/Coursedetails';
@@ -15,7 +13,6 @@ import PGsyllabus from './components/Header/Coursedetails/PGsyllabus/PGsyllabus'
 import Results from './components/Header/Results/Results';
 
 import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
-import Reports from './components/Header/Reports/Reports';
 import ExaminationTeam from './components/Header/ExaminationTeam/ExaminationTeam';
 import AQAR from './components/Header/AQAR/AQAR';
 import PdfViewer from './components/Header/AQAR/PdfViewer';
@@ -31,11 +28,11 @@ import NAACSSR from './components/Home/Data/NAACSSR';
 import FA from './components/Home/Data/FA';
 // import AICTE from './components/Home/Data/AICTE';
 import PCOI from './components/Home/Data/PCOI';
-// import NewsandEvents from './components/Home/NewsandEvents/NewsandEvents';
-// import Scrollbar from './components/Home/NewsandEvents/Scrollbar';
-// import UpdatePanel from './components/Home/UpdatePanel/UpdatePanel';
-//import ControllerofExaminations from './components/Header/About/ControllerofExaminations/ControllerofExamination';
-
+import AdditionalControllerSDC from './components/Header/About/AdditionalControllerSDC/AdditionalControllerSDC';
+import AdditionalController1 from './components/Header/About/AdditionalController1/AdditionalController1';
+import AdditionalController2 from './components/Header/About/AdditionalController2/AdditionalController2';
+import AdditionalController3 from './components/Header/About/AdditionalController3/AdditionalController3';
+import AdditionalControllerPG from './components/Header/About/AdditionalControllerPG/AdditionalControllerPG';
 import Strategies from './components/Home/Data/Strategies';
 import Functions from './components/Home/Data/Functions';
 import Benefits from './components/Home/Data/Benefits';
@@ -43,7 +40,7 @@ import Monitoring from './components/Home/Data/Monitoring';
 import Operational from './components/Home/Data/Operational';
 import Notifications from './components/Header/Notifications/Notifications';
 import Outcomes from './components/Home/Data/Outcomes';
-
+import Examination from './components/Header/About/AboutExamination/AboutExamination';
 import AICTE from './components/Home/AICTE/AICTE';
 import MOU from './components/Home/Data/MOU';
 import Events from './components/Home/Data/Events';
@@ -63,24 +60,22 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutMain />}>
-          <Route path="about-iqac" element={<IQAC />} />
+          <Route path="about-examination" element={<Examination />} />
           <Route path="about-jntugv" element={<JNTUGV />} />
           <Route path="about-director" element={<DirectorofEvaluation />} />
           <Route path="about-controllerofexamination" element={<ControllerofExamination />} />
-        </Route>
-        <Route path="/reports" element={<Reports />} />
-
-        
+          <Route path="about-additionalcontrollerSDC" element={<AdditionalControllerSDC />} />
+          <Route path="about-additionalcontroller1" element={<AdditionalController1 />} />
+          <Route path="about-additionalcontroller2" element={<AdditionalController2 />} />
+          <Route path="about-additionalcontroller3" element={<AdditionalController3 />} />
+          <Route path="about-additionalcontrollerPG" element={<AdditionalControllerPG />} />
+        </Route>      
   <Route path="/about-course-details" element={<Coursedetails />}>
     <Route path="about-ug-syllabus" element={<UGsyllabus />} />
     <Route path="about-pg-syllabus" element={<PGsyllabus />} />
 
     {/* Add more nested routes as needed */}
   </Route>
-
-
-
-        
         <Route path="/programmes-offered" element={<ProgrammesOffered />} />
          <Route path="/examinationteam" element={<ExaminationTeam />} /> 
         <Route path="/AQAR" element={<AQAR />} />

@@ -1,124 +1,75 @@
-export const Administration_Wing = [
+export const Examination_Wing = [
     {
-      title: "Chancellor",
-      link: "/administration/chancellor",
+      title: "Director of Evaluation",
+      link: "/about-us/about-director",
     },
     {
-      title: "Vice Chancellor",
-      link: "/administration/vice-chancellor",
+      title: "Controller of Examination",
+      link: "/about-us/about-controllerofexamination",
     },
-    {
-      title: "Registrar",
-      link: "/administration/registrar",
-    },
-    {
-      title: "Program Offered",
-      link: "/academics/programs-offered",
-    },
-  
-    {
-      title: "Affliated Colleges",
-      link: "/academics/affliated-colleges",
-    },
+
   ];
-  
-  export const Central_Facilites = [
+  export const Syllabus = [
     {
-      title: "Dr.YSR Central Library",
-      link: "/",
-    },
-  
-    {
-      title: "Training & Placement",
-      link: "/",
-    },
-  
-    {
-      title: "National Service Scheme (NSS)",
-      link: "/",
+      title: "UG Syllabus",
+      link: "about-course-details/about-ug-syllabus",
     },
     {
-      title: "Anti Ragging Committee",
-      link: "/",
-    },
-  ];
-  
-  export const Online_Courses = [
-    {
-      title: "Swayam Central",
-      link: "/",
-    },
-    {
-      title: "UGC MOOCs: A Vertical of SWAYAM",
-      link: "/",
-    },
-  
-    {
-      title: "Dr.YSR Central Library",
-      link: "/",
-    },
-  ];
-  
-  export const Constituent_Colleges = [
-    {
-      title: "JNTU-GV College of Engineering, Vizianagaram",
-      link: "https://jntugvcev.edu.in/",
-    },
-    {
-      title:"JNTU-GV Tribal College of Engineering, Kurupam",
-      link:"http://jntugvk.ucev.in/"
+      title:"PG Syllabus",
+      link:"about-course-details/about-pg-syllabus"
     }
-  ];
-  
-  export const University_Hostels = [
-    {
-      title: "Gostani",
-      link: "/",
-    },
-    {
-      title: "Vegavathi",
-      link: "/",
-    },
-    {
-      title: "nagavalli",
-      link: "/",
-    },
-    {
-      title: "vamsadhara",
-      link: "/",
-    },
   ];
   
   export const JntuGv_Units = [
     {
-      title: "DMC",
-      link: "/",
+      title: "Examinationteam",
+      link: "/examinationteam",
     },
     {
-      title: "IQAC",
-      link: "/",
+      title: "Notifications",
+      link: "/notifications",
     },
     {
-      title: "Sports",
-      link: "/",
+      title: "Contact",
+      link: "/contact",
     },
     {
-      title: "Library",
-      link: "/",
+      title: "Results",
+      link: "/results",
     },
     {
-      title: "Incubation Center",
-      link: "/",
+      title: "Chatbot",
+      link: "/programmes-offered",
+    },
+    
+  ];
+ 
+  
+  export const Examination_Team = [
+    {
+      title: "Additional Controller of Examinations SDC",
+      link: "/about-us/about-additionalcontrollerSDC",
+    },
+  
+    {
+      title: "Additional Controller of Examinations 1",
+      link: "/about-us/about-additionalcontroller1",
+    },
+  
+    {
+      title: "Additional Controller of Examinations 2",
+      link: "/about-us/about-additionalcontroller2",
+    },
+    {
+      title: "Additional Controller of Examinations 3",
+      link: "/about-us/about-additionalcontroller3",
+    },
+    {
+      title: "Additional Controller of Examinations PG",
+      link: "/about-us/about-additionalcontrollerPG",
     },
   ];
   
-  export const Grievance = [
-    {
-        title: "Student Grievance",
-        link:"/grievance-form"
-    },
-    {
-      title: "Recruitment Grievance",
-      link:"mailto:recruitmentgrievances@jntugv.edu.in"
-  },
-  ]
+  
+  
+ 
